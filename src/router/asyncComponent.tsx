@@ -3,8 +3,8 @@ import React, { Component } from "react";
 type StateType = {
   component: () => Promise<any>;
 };
-const asyncComponent1 = (importComponent: () => Promise<any>) => {
-  class AsyncComponent extends Component <any, StateType> {
+const asyncComponent = (importComponent: () => Promise<any>) => {
+  class AsyncComponent extends Component <any, any> {
     constructor(props: any) {
       super(props);
       this.state = {
@@ -17,11 +17,10 @@ const asyncComponent1 = (importComponent: () => Promise<any>) => {
     }
     render() {
       const C = this.state.component;
-      console.log("C", C);
       return C ? <C {...this.props} /> : null;
     }
   }
   return AsyncComponent;
 }
 
-export default asyncComponent1
+export default asyncComponent

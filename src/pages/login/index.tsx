@@ -1,13 +1,13 @@
 import React from 'react';
-import './App.css';
+import './index.css';
 import {Button} from 'antd';
 
-function App() {
+function Login() {
   return (
     <div className="App">
-      <Button type="primary">Hello</Button>
+      <Button type="primary">登录页</Button>
     </div>
   );
 }
 
-export default App;
+export default Login;
