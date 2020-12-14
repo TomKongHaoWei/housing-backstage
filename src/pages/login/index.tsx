@@ -4,7 +4,7 @@ import {Button} from 'antd';
 
 function Login() {
   return (
-    <div className="App">
+    <div className="login">
       <Button type="primary">登录页</Button>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link, useHistory } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import './index.css';
 import {Button} from 'antd';
 
@@ -11,8 +11,10 @@ function Home() {
   }
 
   return (
-    <div className="App">
+    <div className="home">
       <Button type="primary" onClick={() => qqq()}>Home</Button>
+    
+      <Link to="/login"><button>login</button></Link>
     </div>
   );
 }
