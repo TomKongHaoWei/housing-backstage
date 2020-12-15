@@ -1,15 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component, lazy } from 'react'
 import { HashRouter, Switch, Route } from 'react-router-dom'
-// import asyncComponent from './asyncComponent.jsx'
-import asyncComponent from './asyncComponent'
 
-// 原来的写法
-// import Home from '../pages/home'
-// import Login from '../pages/login'
-
-// 按需加载写法
-const Home = asyncComponent(() => import('../pages/home'));
-const Login = asyncComponent(() => import('../pages/home'));
+const Home = lazy(() => import("../pages/home"));
+const Login = lazy(() => import("../pages/login"));
 
 export default class RouteConfig extends Component {
   render() {

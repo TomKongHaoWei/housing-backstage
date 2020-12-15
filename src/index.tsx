@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Router from './router/index'
 import reportWebVitals from './reportWebVitals';
 import 'antd/dist/antd.css';
+import App from './App';
+
 ReactDOM.render(
-  <Router/>,
+  <App/>,
   document.getElementById('root')
 )
 reportWebVitals();

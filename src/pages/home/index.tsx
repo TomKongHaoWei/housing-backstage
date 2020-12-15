@@ -3,6 +3,8 @@ import { Link, useHistory } from 'react-router-dom'
 import './index.css';
 import {Button} from 'antd';
 
+console.log(2);
+
 // let [history, setHistory] = useHistory();
 function Home() {
   const qqq = ()=>{
