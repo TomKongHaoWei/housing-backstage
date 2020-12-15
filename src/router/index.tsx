@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { HashRouter, Switch, Route } from 'react-router-dom'
-import asyncComponent from './asyncComponent.jsx'
+// import asyncComponent from './asyncComponent.jsx'
+import asyncComponent from './asyncComponent'
 
 // 原来的写法
 // import Home from '../pages/home'
